@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Hollard Effort Tracker</h1>
+    <button id="darkmode">Dark Mode On</button>
+
+    <form action="index.php"  method="post">
+        <div class="mb-3">
+          <label for="examplesprintno" class="form-label">Sprint Number</label>
+          <input type="text" class="form-control" id="sprintno" name="sprintno">
+          <div id="sprinthelp" class="form-text">Please enter sprint number</div>
+        </div>
+        <div class="mb-3">
+          <label for="examplestoryno" class="form-label">Story Number</label>
+          <input type="text" class="form-control" id="storyno" name="storyno">
+          <div id="storyhelp" class="form-text">Please enter story number</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampledescription" class="form-label">Description of Story</label>
+            <input type="text" class="form-control" id="description" name="description">
+            <div id="deshelp" class="form-text">description of story</div>
+          </div>
+        <div class="mb-3">
+            <label for="examplebugno" class="form-label">Bug Raised</label>
+            <input type="text" class="form-control" id="bugno" name="bugno">
+            <div id="bughelp" class="form-text">Please enter any bug raised for the story</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="examplecomments" class="form-label">Comments</label>
+            <textarea name="comments" id="comments" cols="300" rows="6"></textarea>
+            <div id="commenthelp" class="form-text">Please enter Comment</div>
+          </div>
+          
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
