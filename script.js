@@ -9,6 +9,9 @@ class employee {
   displayDetails() {
     return `Name: ${this.name} \nEmp ID :${this.emplid}\nDept:${this.dept}`;
   }
+  giveMoreSalary(more) {
+    return this.salary + more;
+  }
 }
 
 let e1 = new employee();
